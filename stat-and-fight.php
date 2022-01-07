@@ -4,9 +4,14 @@
 while ($me['pv'] == 0 && $ennemy ['pv'] == 0) {
     $action = (int)readline('Choose a spell:(fire-ball, sword-dash,regain )');
 
+    $attack = [
+        'fire-ball' => 10,
+        'sword-dash' => 5,
+        'regain' => 7,
+    ];
+
     $me = [
         'pv' => 30,
-        'defense' => 10,
         'spell' => [
             'fire-ball' => 10,
             'sword-dash' => 5,
@@ -16,7 +21,6 @@ while ($me['pv'] == 0 && $ennemy ['pv'] == 0) {
 
     $ennemy = [
         'pv' => 30,
-        'defense' => 5,
         'spell' => [
             'sword dash' => 5,
             'regain' => 7,
